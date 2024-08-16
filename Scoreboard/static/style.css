@@ -1,0 +1,168 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #C2C1A5; /* Background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.leaderboard {
+    background: #36453B; /* Main background color for the leaderboard */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 80%;
+    max-width: 1200px;
+    height: 90vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative; /* Ensure positioning for the back button */
+}
+
+.header h1 {
+    margin: 0;
+    color: #F5F9E9; /* Title color */
+    font-family: 'Times New Roman', serif;
+}
+
+.back-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 4px 8px;
+    font-size: 0.8em;
+    border: 1px solid #596869; /* Border color */
+    border-radius: 12px;
+    background-color: #F5F9E9; /* Button color */
+    color: #36453B; /* Button text color */
+    cursor: pointer;
+}
+
+.back-button:hover {
+    background-color: #515751; /* Hover color */
+    color: #F5F9E9; /* Hover text color */
+}
+
+.controls-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.sort-container {
+    display: flex;
+    align-items: center;
+}
+
+#sort-by-points {
+    padding: 6px 12px;
+    font-size: 0.9em;
+    border: 1px solid #596869; /* Border color */
+    border-radius: 20px;
+    background-color: #F5F9E9; /* Select box background color */
+    color: #36453B; /* Select box text color */
+    cursor: pointer;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+#search-input {
+    padding: 6px 12px;
+    font-size: 0.9em;
+    border: 1px solid #596869; /* Border color */
+    border-radius: 20px;
+    width: 200px;
+    margin-right: 10px;
+    background-color: #F5F9E9; /* Input background color */
+    color: #36453B; /* Input text color */
+}
+
+#search-button {
+    padding: 6px 12px;
+    font-size: 0.9em;
+    border: 1px solid #596869; /* Border color */
+    border-radius: 20px;
+    background-color: #F5F9E9; /* Button color */
+    color: #36453B; /* Button text color */
+    cursor: pointer;
+}
+
+#search-button:hover {
+    background-color: #515751; /* Hover color */
+    color: #F5F9E9; /* Hover text color */
+}
+
+.table-container {
+    max-height: calc(100% - 80px);
+    overflow-y: auto;
+    padding-bottom: 40px; /* Ensure space for 'Back to Top' button */
+    position: relative;
+}
+
+.leaderboard table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.leaderboard th,
+.leaderboard td {
+    padding: 10px;
+    border: 1px solid #596869; /* Border color */
+    text-align: left;
+}
+
+.leaderboard th {
+    background-color: #F5F9E9; /* Header background color */
+    color: #36453B; /* Header text color */
+}
+
+.leaderboard tbody tr:nth-child(odd) {
+    background-color: #F5F9E9; /* Row color */
+}
+
+.leaderboard tbody tr:nth-child(even) {
+    background-color: #C2C1A5; /* Row color */
+}
+
+.leaderboard tbody tr:hover {
+    background-color: #515751; /* Hover row color */
+}
+
+.leaderboard td {
+    font-size: 1.2em;
+    color: #36453B; /* Text color */
+}
+
+#back-to-top {
+    display: none;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 6px 12px;
+    font-size: 0.9em;
+    border: 1px solid #596869; /* Border color */
+    border-radius: 20px;
+    background-color: rgba(245, 249, 233, 0.7); /* Button color with transparency */
+    color: #36453B; /* Button text color */
+    cursor: pointer;
+}
+
+#back-to-top:hover {
+    background-color: rgba(81, 87, 81, 0.7);
+    color: #F5F9E9; /* Hover text color */
+}

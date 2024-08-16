@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="leaderboard">
+        <div class="header">
+            <h1>Leaderboard</h1>
+            <button id="back-button" class="back-button" style="display: none;">Back</button>
+        </div>
+        <div class="controls-container">
+            <div class="sort-container">
+                <select id="sort-by-points">
+                    <option value="none">Sort By Points</option>
+                    <option value="asc">Points Ascending</option>
+                    <option value="desc">Points Descending</option>
+                </select>
+            </div>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search by rank or player name...">
+                <button id="search-button">Search</button>
+            </div>
+        </div>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Player Name</th>
+                        <th>Score</th>
+                    </tr>
+                </thead>
+                <tbody id="leaderboard-list"></tbody>
+            </table>
+        </div>
+        <button id="back-to-top" style="display: none;">Back to Top</button>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
